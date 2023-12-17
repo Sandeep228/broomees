@@ -12,71 +12,57 @@ npm start
 
 # Endpoints Documentation
 
-This documentation provides information about the payload structure required for each endpoint.
+This documentation provides information about the user structure required for each endpoint.
 
-## 1. POST: /jobs
+## 1. POST: /register
 
 **Description:**
-Add a new job to the job list.
+Add a new user to the user list.
 
 **Request Payload:**
 
 ```json
 {
     "name": "Specialist",
-    "location": "Colombo, India",
-    "posted": "23rd May",
-    "status": "Published",
-    "applied": 40,
-    "jobViews": 100,
-    "daysLeft": 7,
-    "premium": false,
-    "dateFormat": "2023-05-23"
+    "email": "sd769113@gmail.com",
+    "username":"sdsd",
+    "password":"12345Er"
   }
 ```
 
 **Response Body:**
 ```json
 {
-    "name": "Specialist",
-    "location": "Colombo, India",
-    "posted": "23rd May",
-    "status": "Published",
-    "applied": 40,
-    "jobViews": 100,
-    "daysLeft": 7,
-    "premium": false,
-    "dateFormat": "2023-05-23",
-    "_id": "65799150c244249b20da2a35",
-    "createdAt": "2023-12-13T11:11:12.613Z",
-    "updatedAt": "2023-12-13T11:11:12.613Z",
+    "name": "er",
+    "email": "rt@gmail.com",
+    "username": "rt",
+    "password": "we1234567@",
+    "_id": "657ed8266eb9b62ca393f126",
+    "createdAt": "2023-12-17T11:14:46.309Z",
+    "updatedAt": "2023-12-17T11:14:46.309Z",
     "__v": 0
 }
+
 ```
 
 
 ## 2. GET: /
 **Description:**
-Get job list.
+Get user list.
 
 **Response Body:**
 ```json
 [
     {
-    "_id": "65796a68c244249b20da2a29",
-    "name": "Interventional Cardiologist",
-    "location": "New York City, USA",
-    "posted": "25th May",
-    "status": "Published",
-    "applied": 98,
-    "jobViews": 128,
-    "daysLeft": 2,
-    "premium": false,
-    "dateFormat": "2023-05-25",
-    "createdAt": "2023-12-13T08:25:12.794Z",
-    "updatedAt": "2023-12-13T08:25:12.794Z",
-    "__v": 0
-}
+        "_id": "657ec167a01317d062983e0b",
+        "name": "Specialist",
+        "email": "sd769113@gmail.com",
+        "username": "sdsd",
+        "password": "12345Er",
+        "createdAt": "2023-12-17T09:37:43.044Z",
+        "updatedAt": "2023-12-17T09:37:43.044Z",
+        "__v": 0
+    }
 ]
 ```
 
