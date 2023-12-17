@@ -23,10 +23,10 @@ Add a new user to the user list.
 
 ```json
 {
-    "name": "Specialist",
-    "email": "sd769113@gmail.com",
-    "username":"sdsd",
-    "password":"12345Er"
+    "name": "er",
+    "email": "rt@gmail.com",
+    "username":"rt",
+    "password":"we1234567@"
   }
 ```
 
